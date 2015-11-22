@@ -19,7 +19,8 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
+  <body data-spy="scroll" data-target=".navbar-scroll">
+    <div class="navbar-scroll">
     <div class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -30,20 +31,25 @@
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
           <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">Services</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#service">Services</a></li>
+          <li><a href="#aboutUs">About Us</a></li>
         </ul>
         </div>
       </div>
     </div>
+    </div>
+
+
     <div class="container">
       <div class="jumbotron">
         <h2 class="jumbotron-header">Your Pets Are Our Priority!</h2>
         <p class="lead">At Diva Dog Pet Care, we treat your pets as if they were are own. We pride ourselves on quality care and service.</p>
         <p>
-          <a class="btn btn-info btn-lg" href="#">Our Services</a>
+          <a class="btn btn-info btn-lg" href="#service">Our Services</a>
         </p>
       </div>
-      <h2 class="gallery-header">Gallery</h2>
+      <h2 class="gallery-header" id="gallery">Gallery</h2>
     <div id="myCarousel" class="carousel slide jumbotron">
       <div class="container">
         <ol class="carousel-indicators">
@@ -84,20 +90,33 @@
         <p>Does your pet have tons of energy? Does your pet need multiple walks a day? We can help. We offer dog walking services and we can come to your home or office for added convenience. Going on a trip? Don't want to board your pet? We can watch your pet for you in the comfort of the home!</p>
       </div>
   </div>
-  <div>
-    <h2>Services</h2>
+  <div >
+    <h2 class="service-header" id="service">Services</h2>
+    <div class="service-list">
+      <p>We offer a multitude of services to fit your needs. We are availabe to come to you, or at our facility.</p>
+      <ul>
+        <li>In home pet-sitting. We can come to your home to watch your pet when you can't be there! For one day or one week, we are available!</li>
+        <li>In home bathing. Don't want the hassle and stress of giving a bath. Let's us handle the dirty work, literally!</li>
+        <li>Dog walking. Are you not up for multiple or long walks? We can help by walking your pet during the day while you are away. </li>
+        <li>Basic command training. Do you want Fido to fetch, but he won't even sit? We will train you and your pet on the basic commands to improve your relationship. After all, a well trained dog is a happy dog!</li>
+        <li>Potty patrol yard cleaning. If cleaning up after your pet is not your idea of a fun time. We can clean up your yard for you!</li>
+      </ul>
+    </div>
   </div>
   <div>
-    <h2>About Us</h2>
+    <h2 class="about-header" id="aboutUs">About Us</h2>
+    <p>At Diva Dog Pet Care, ypur pet is our main focus. Your happiness, as well as your pet's is of the upmost importance. We strive for superior care of pets in familiar surroundings to decrease the amount of stress placed on your pet and you. After all, pets are family.</p>
   </div>
     <div>
-      <p>&copy; 2015 DivaDogPetCare. FINE PRINT: We are not an actual company.</p>
+      <p class="bottom-line">&copy; 2015 DivaDogPetCare. FINE PRINT: We are not an actual company.</p>
     </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <!-- scroll spy -->
+    $('body').scrollspy({target: '.navbar-scroll' })
     </div>
   </body>
 </html>
