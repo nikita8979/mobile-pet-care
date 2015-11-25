@@ -2,8 +2,37 @@
 body {
 	position: relative;
 	padding-top: 80px;
-	background-color: ;
+	
 }
+ 
+.navbar {
+	background: #FFFFFF;
+} 
+.navbar-brand{
+	font-style: italic;
+}
+
+.body{
+	background-color: #FFBBBB;
+}
+
+
+.jumbotron {
+	background-image: url('../images/Swirl Floral Design Vector Art.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	opacity: 50%;
+
+	
+}
+
+.jumbotron-header{
+	font-style: italic;
+}
+
+
+
+
 
 .jumbotron-header{
 	text-align: center;
@@ -11,18 +40,34 @@ body {
 
 .gallery-header{
 	text-align: center;
+	padding-top:100px;
+}
+
+
+
+
+.overview{
+	padding-top: 100px;
 }
 
 .service-header{
 	text-align: center;
+	padding-top: 100px;
 }
 
 .about-header{
+	text-align: center;
+	padding-top: 100px;
+}
+
+.about-info {
 	text-align: center;
 }
 
 .bottom-line{
 	text-align: center;
+	padding-top: 75px;
+	padding-bottom: 25px;
 }
 
 .container {
@@ -46,6 +91,14 @@ body {
  	max-width: 250px;
  	max-height: 250px;
  }
+
+.icon-next{
+	color: #333;
+}
+
+.icon-prev{
+	color: #333;
+}
 
 .service-list {
 	padding-left: 15%;

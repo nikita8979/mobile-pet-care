@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/bootstrap-theme.min.css"rel="stylesheet" type="text/css" >
-    <link rel="stylesheet" type="text/css" href="css/my-css-stylesheet.css">
+    
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Diva Dog Pet Care</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
+    <link rel="stylesheet" type="text/css" href="css/my-css-stylesheet.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -19,10 +19,10 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body data-spy="scroll" data-target=".navbar-scroll">
+  <body class="body" data-spy="scroll" data-target=".navbar-scroll">
     <div class="navbar-scroll">
     <div class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
+      <div class="container" id="navabar">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
@@ -30,7 +30,7 @@
         <a class="navbar-brand" href="#">Diva Dog Pet Care</a>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
-          <li class="active"><a href="#">Home</a></li>
+          <li class="active"><a href="#jumbotron">Home</a></li>
           <li><a href="#gallery">Gallery</a></li>
           <li><a href="#service">Services</a></li>
           <li><a href="#aboutUs">About Us</a></li>
@@ -42,11 +42,11 @@
 
 
     <div class="container">
-      <div class="jumbotron">
-        <h2 class="jumbotron-header">Your Pets Are Our Priority!</h2>
-        <p class="lead">At Diva Dog Pet Care, we treat your pets as if they were are own. We pride ourselves on quality care and service.</p>
+      <div class="jumbotron" id="jumbotron">
+        <h1 class="jumbotron-header text-center">Your Pets Are Our Priority!</h1>
+        <p class="lead text-center">At Diva Dog Pet Care, we treat your pets as if they were are own. We pride ourselves on quality care and service.</p>
         <p>
-          <a class="btn btn-info btn-lg" href="#service">Our Services</a>
+          <a class="btn btn-default btn-lg" href="#service">Our Services</a>
         </p>
       </div>
       <h2 class="gallery-header" id="gallery">Gallery</h2>
@@ -59,13 +59,13 @@
         </ol>
         <div class="carousel-inner">
           <div class="item active">
-            <img src="images/spring pooh 1.JPG" alt="">
+            <img src="images/spring pooh 1.JPG" alt="Care for Spring">
           </div>
           <div class="item">
-            <img src="images/06-14-2015 535.JPG" alt="">
+            <img src="images/06-14-2015 535.JPG" alt="Sleeping At Home">
           </div>
           <div class="item">
-            <img src="images/06-14-2015 881.JPG" alt="">
+            <img src="images/06-14-2015 881.JPG" alt="Bath Time">
           </div>
         </div>
       </div>
@@ -76,6 +76,7 @@
         <span  class="icon-next"></span>
       </a> 
     </div>
+    <div class="overview">
     <div class="row">
       <div class="col-sm-4">
         <h3>Why Choose Us</h3>
@@ -90,6 +91,7 @@
         <p>Does your pet have tons of energy? Does your pet need multiple walks a day? We can help. We offer dog walking services and we can come to your home or office for added convenience. Going on a trip? Don't want to board your pet? We can watch your pet for you in the comfort of the home!</p>
       </div>
   </div>
+</div>
   <div >
     <h2 class="service-header" id="service">Services</h2>
     <div class="service-list">
@@ -105,7 +107,7 @@
   </div>
   <div>
     <h2 class="about-header" id="aboutUs">About Us</h2>
-    <p>At Diva Dog Pet Care, ypur pet is our main focus. Your happiness, as well as your pet's is of the upmost importance. We strive for superior care of pets in familiar surroundings to decrease the amount of stress placed on your pet and you. After all, pets are family.</p>
+    <p class="about-info">At Diva Dog Pet Care, your pet is our main focus. Your happiness, as well as your pet's is of the upmost importance. We strive for superior care of pets in familiar surroundings to decrease the amount of stress placed on your pet and you. After all, pets are family.</p>
   </div>
     <div>
       <p class="bottom-line">&copy; 2015 DivaDogPetCare. FINE PRINT: We are not an actual company.</p>
@@ -116,7 +118,9 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <!-- scroll spy -->
-    $('body').scrollspy({target: '.navbar-scroll' })
+    <script type="text/javascript">
+      $('body').scrollspy({target: '.navbar-scroll' });
+    </script>
     </div>
   </body>
 </html>
